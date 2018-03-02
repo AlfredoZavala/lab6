@@ -1,3 +1,7 @@
+// Modified by: Alfredo Zavala
+// Date: 3/2/2018
+//
+
 #include <GL/glx.h>
 #include "fonts.h"
 
