@@ -57,6 +57,7 @@ extern void timeCopy(struct timespec *dest, struct timespec *source);
 //-----------------------------------------------------------------------------
 
 extern void showName(int botPos, int leftPos, int centerPos, int textColor, const char* textName);
+extern void drawBox(int xPos, int yPos); 
 
 class Global {
 public:
@@ -835,7 +836,7 @@ void render()
 	}
 
 	showName(220, 312, 20, 0x00ffff, "alfredo zavala" );
-
+	drawBox(gl.xres/2, gl.yres/2);
 }
 
 
