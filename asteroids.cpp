@@ -56,6 +56,8 @@ extern double timeDiff(struct timespec *start, struct timespec *end);
 extern void timeCopy(struct timespec *dest, struct timespec *source);
 //-----------------------------------------------------------------------------
 
+extern void showName(int botPos, int leftPos, int centerPos, int textColor, const char* textName);
+
 class Global {
 public:
 	int xres, yres;
@@ -831,6 +833,9 @@ void render()
 		glEnd();
 		++b;
 	}
+
+	showName(220, 312, 20, 0x00ffff, "alfredo zavala" );
+
 }
 
 
